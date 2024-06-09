@@ -2,12 +2,12 @@
 
 {% block body %}
     <div class="mb-3">
-        <button type="button" class="btn btn-primary btn-block">Phone</button>
-        <button type="button" class="btn btn-primary btn-block">Food</button>
-        <button type="button" class="btn btn-primary btn-block">Clothes</button>
+        <a href="{% url "cat" slug='Phone' %}"  class="btn btn-primary btn-block">Phone</a>
+        <a href="{% url "cat" slug='Food' %}"  class="btn btn-primary btn-block">Food</a>
+        <a href="{% url "cat" slug='Clothes' %}" class="btn btn-primary btn-block">Clothes</a>
     </div>   
     <div class="row">   
-        {% for number in feature %}
+        {% for product in feature %}
             {% include "includes/product.html" %}
         {% endfor %}
     </div>

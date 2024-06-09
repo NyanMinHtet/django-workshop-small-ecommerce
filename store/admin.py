@@ -3,7 +3,8 @@ from . models import Product,ProductDetail,Receipt
 
 # Register your models here.
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name','price','type')
+    list_filter = ("category",)
+    list_display = ('name','price','category')
 
 class ProductDetailAdmin(admin.ModelAdmin):
     list_display = ('product','color','info')
