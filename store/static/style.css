@@ -1,0 +1,50 @@
+.bullet-label {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+.bullet-label:hover {
+    border-color: #333; /* Change border color on hover */
+}
+
+.bullet-list {
+    list-style: none;
+    padding: 0;
+}
+
+.bullet-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.hidden-radio {
+    display: none;
+}
+
+/* Define bullet colors */
+.bullet-green {
+    background-color: green;
+}
+
+.bullet-yellow {
+    background-color: yellow;
+}
+
+.bullet-red {
+    background-color: red;
+}
+
+/* Make bullet label bigger when clicked */
+.hidden-radio:checked + .bullet-label {
+    transform: scale(1.2); /* Scale up by 20% */
+}
+
+.product_img{
+    border-radius: 10px;
+    box-shadow: 15px 15px 5px rgba(58, 58, 40, 0.1);
+}
