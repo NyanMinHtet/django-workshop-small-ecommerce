@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;    
+}
+
 .bullet-label {
     width: 20px;
     height: 20px;
@@ -45,6 +50,7 @@
 }
 
 .product_img{
-    border-radius: 10px;
+    border-radius: 60px;
     box-shadow: 15px 15px 5px rgba(58, 58, 40, 0.1);
 }
+

@@ -5,13 +5,42 @@
     <div class="content">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card">
+                <div class="card payment-card">
                     <div class="card-body">
                         <h2 class="card-title text-center mb-4">Payment</h2>
                         <form method="POST">
                             {% csrf_token %}
-                            {{form}}
-                            <button type="submit" class="btn btn-primary btn-block mt-4">Submit</button>
+                            <div class="form-group row pt-2">
+                                <label for="cus_name" class="col-sm-3 col-form-label">Customer Name:</label>
+                                <div class="col-sm-9">
+                                    {{ form.cus_name }}
+                                </div>
+                            </div>
+                            <div class="form-group row pt-2">
+                                <label for="email" class="col-sm-3 col-form-label">Email:</label>
+                                <div class="col-sm-9">
+                                    {{ form.email }}
+                                </div>
+                            </div>
+                            <div class="form-group row pt-2">
+                                <label for="phone_no" class="col-sm-3 col-form-label">Phone Number:</label>
+                                <div class="col-sm-9">
+                                    {{ form.phone_no }}
+                                </div>
+                            </div>
+                            <div class="form-group row pt-2">
+                                <label for="address" class="col-sm-3 col-form-label">Address:</label>
+                                <div class="col-sm-9">
+                                    {{ form.address }}
+                                </div>
+                            </div>
+                            <div class="form-group row pt-2">
+                                <label for="payment_method" class="col-sm-3 col-form-label">Payment Method:</label>
+                                <div class="col-sm-9">
+                                    {{ form.payment_method }}
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary btn-block mt-4">Submit</button>
                         </form>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ from django.db import models
 class Product(models.Model):
 
     PRODUCT_CATEGORY = [
-        ('Phone', 'Phone'),
+        ('Electric', 'Electric'),
         ('Food', 'Food'),
         ('Clothes', 'Clothes'),
     ]

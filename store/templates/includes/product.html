@@ -1,11 +1,11 @@
-<div class="col-md-4 mb-4">
-    <div class="card pd_card">
-        <img src="{{product.image.url}}" class="card-img-top" alt="Product 1">
+<div class="col-md-4 mt-5">
+    <div class="card pd_card" style="width: 97%;">
+        <img src="{{product.image.url}}" class="card-img-top" alt="Product img" style="width: 400px;height: 400px;">
         <div class="card-body">
             <h5 class="card-title">{{ product.name }}</h5>
             <p class="card-text">${{ product.price}}</p>
             <p class="card-text"> {{ product.category}} </p>
-            <a href="{% url 'pd_detail' pd_id=product.id %}" class="btn btn-primary">Show Details</a>
+            <a href="{% url 'pd_detail' pd_id=product.id %}" class="btn btn-outline-primary">Show Details</a>
         </div>
     </div>
 </div>

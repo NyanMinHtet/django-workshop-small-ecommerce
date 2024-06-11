@@ -1,11 +1,6 @@
 {% extends 'base/base.html' %}
 
-{% block body %}
-    <div class="mb-3">
-        <a href="{% url "cat" slug='Phone' %}"  class="btn btn-primary btn-block">Phone</a>
-        <a href="{% url "cat" slug='Food' %}"  class="btn btn-primary btn-block">Food</a>
-        <a href="{% url "cat" slug='Clothes' %}" class="btn btn-primary btn-block">Clothes</a>
-    </div>   
+{% block body %}   
     <div class="row">   
         {% for product in feature %}
             {% include "includes/product.html" %}

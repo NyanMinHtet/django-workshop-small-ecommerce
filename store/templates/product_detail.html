@@ -33,7 +33,10 @@
             </p>
             {% if selfinfo  %}
                 <a href="{% url "checkout" product.id selfinfo.color %}" class="btn btn-primary btn-lg">Buy Now</a>
+            {% comment %} {% else %}
+                <a href="{% url "checkout" product.id %}" class="btn btn-primary btn-lg">Buy Now</a> {% endcomment %}
             {% endif %}
+            
         </div>
     </div>
 {% endblock body %}
